@@ -2,6 +2,7 @@
   "name": "tab-replace",
   "displayName": "tab-replace",
   "description": "Replace all tabs with spaces",
+  "author": "andreazorzi <info@zorziandrea.com>",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.103.0"
