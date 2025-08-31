@@ -12,6 +12,19 @@
   "activationEvents": [],
   "main": "./dist/extension.js",
   "contributes": {
+    "commands": [
+      {
+        "command": "tab-replace.replace",
+        "title": "Replace all tabs with spaces"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "tab-replace.replace",
+        "key": "ctrl+shift+x",
+        "mac": "cmd+shift+x"
+      }
+    ]
   },
   "scripts": {
     "vscode:prepublish": "npm run package",
