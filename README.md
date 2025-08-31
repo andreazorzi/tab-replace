@@ -1,71 +1,55 @@
-# tab-replace README
+# Tab Replace
 
-This is the README for your extension "tab-replace". After writing up a brief description, we recommend including the following sections.
+A simple VS Code extension that converts all tab characters in your documents to spaces, using your configured `editor.tabSize` setting.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- 🔄 **Smart Conversion**: Automatically uses your `editor.tabSize` setting
+- 🎯 **Language Aware**: Respects language-specific tab size configurations
+- ⚡ **Fast & Efficient**: Processes entire documents quickly
+- 📊 **Feedback**: Shows how many tabs were converted
 
-For example if there is an image subfolder under your extension project workspace:
+![Demo](images/usage.gif)
 
-\!\[feature X\]\(images/feature-x.png\)
+### Command Palette
+1. Open the Command Palette (`Ctrl+Shift+P` / `Cmd+Shift+P`)
+2. Type `Replace all tabs with spaces`
+3. Press Enter
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+### Keyboard Shortcut
+- **Windows/Linux**: `Ctrl+Shift+X`
+- **macOS**: `Cmd+Shift+X`
 
-## Requirements
+## How It Works
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+The extension:
+1. Reads your current `editor.tabSize` setting (defaults to 4 if not set)
+2. Finds all tab characters (`\t`) in the active document
+3. Replaces each tab with the appropriate number of spaces
+4. Shows a confirmation message with the number of tabs converted
 
-## Extension Settings
+### Example
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+If your `editor.tabSize` is set to 2:
+```typescript
+    // Before
+    function example() {
+    →   →   return "hello";
+    }
 
-For example:
+    // After
+    function example() {
+        return "hello";
+    }
+```
 
-This extension contributes the following settings:
+## Configuration
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+The extension automatically uses your VS Code settings:
 
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+### Global Setting
+```typescript
+    {
+      "editor.tabSize": 4
+    }
+```
