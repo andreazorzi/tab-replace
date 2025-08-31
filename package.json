@@ -4,12 +4,25 @@
   "description": "Replace all tabs with spaces",
   "author": "andreazorzi <info@zorziandrea.com>",
   "version": "0.0.1",
+  "publisher": "AndreaZorzi",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andreazorzi/tab-replace"
+  },
   "engines": {
     "vscode": "^1.103.0"
   },
   "categories": [
+    "Formatters",
     "Other"
   ],
+  "keywords": [
+    "tabs",
+    "spaces",
+    "formatting",
+    "indentation"
+  ],
+  "icon": "images/icon.png",
   "activationEvents": [],
   "main": "./dist/extension.js",
   "contributes": {
