@@ -3,7 +3,7 @@
   "displayName": "tab-replace",
   "description": "Replace all tabs with spaces",
   "author": "andreazorzi <info@zorziandrea.com>",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "publisher": "AndreaZorzi",
   "repository": {
     "type": "git",
