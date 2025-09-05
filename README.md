@@ -1,3 +1,8 @@
+[![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/AndreaZorzi.tab-replace.svg)](https://marketplace.visualstudio.com/items?itemName=AndreaZorzi.tab-replace)
+[![Visual Studio Marketplace Downloads](https://img.shields.io/visual-studio-marketplace/d/AndreaZorzi.tab-replace.svg)](https://marketplace.visualstudio.com/items?itemName=AndreaZorzi.tab-replace)
+[![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/AndreaZorzi.tab-replace.svg)](https://marketplace.visualstudio.com/items?itemName=AndreaZorzi.tab-replace)
+[![Visual Studio Marketplace Rating](https://img.shields.io/visual-studio-marketplace/r/AndreaZorzi.tab-replace.svg)](https://marketplace.visualstudio.com/items?itemName=AndreaZorzi.tab-replace)
+
 # Tab Replace
 
 A simple VS Code extension that converts all tab characters in your documents to spaces, using your configured `editor.tabSize` setting.
